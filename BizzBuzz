@@ -1,0 +1,26 @@
+package com.company;
+
+import com.sun.source.tree.IfTree;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Number: ");
+        int number = scanner.nextInt();
+        if(number % 2 == 0 && number % 5 ==0){
+            System.out.println("BizzBuzz");}
+        else if(number % 2 == 0) {
+            System.out.println("Bizz");}
+        else if(number % 5 == 0) {
+            System.out.println("Buzz");}
+        else {
+            System.out.println(number);
+        }
+
+
+    }
+}
